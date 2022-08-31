@@ -81,7 +81,7 @@ public class App extends Panel {
          */
 
         // Titre
-        Label title = new Label("Tiranium Launcher");
+        Label title = new Label("LauncherJava Launcher");
         title.setFont(Font.font("Consolas", FontWeight.BOLD, FontPosture.REGULAR, 30f));
         title.getStyleClass().add("home-title");
         setCenterH(title);

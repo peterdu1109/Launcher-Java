@@ -28,7 +28,7 @@ public class PanelManager {
     }
 
     public void init() {
-        this.stage.setTitle("Tiranium Launcher");
+        this.stage.setTitle("LauncherJava Launcher");
         this.stage.setMinWidth(854);
         this.stage.setMinHeight(480);
         this.stage.setWidth(1280);

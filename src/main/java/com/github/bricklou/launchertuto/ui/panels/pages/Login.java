@@ -83,7 +83,7 @@ public class Login extends Panel {
         /*
          * Login sidebar
          */
-        Label title = new Label("Tiranium launcher");
+        Label title = new Label("LauncherJava launcher");
         title.setFont(Font.font("ARIAL", FontWeight.BOLD, FontPosture.REGULAR, 30f));
         title.getStyleClass().add("login-title");
         setCenterH(title);
@@ -98,7 +98,7 @@ public class Login extends Panel {
         setCanTakeAllSize(userField);
         setCenterV(userField);
         setCenterH(userField);
-        userField.setPromptText("Adresse E-Mail de Tiranium");
+        userField.setPromptText("Adresse E-Mail de LauncherJava");
         userField.setMaxWidth(300);
         userField.setTranslateY(-70d);
         userField.getStyleClass().add("login-input");
@@ -162,7 +162,7 @@ public class Login extends Panel {
         imageView.setTranslateX(90);
         imageView.setOnMouseClicked(e -> {
             try {
-                Desktop.getDesktop().browse(new URI("https://hopeful-kare.78-198-63-78.plesk.page/user/register"));
+                Desktop.getDesktop().browse(new URI("Url register"));
             }   catch (IOException | URISyntaxException ex) {
 
                 ex.printStackTrace();
@@ -191,7 +191,7 @@ public class Login extends Panel {
         inscritText2.setTranslateX(146d);
         inscritText2.setOnMouseClicked(e -> {
             try {
-                Desktop.getDesktop().browse(new URI("https://hopeful-kare.78-198-63-78.plesk.page/user/register"));
+                Desktop.getDesktop().browse(new URI("Url register"));
             } catch (IOException | URISyntaxException ex) {
                 ex.printStackTrace();
             }
@@ -244,7 +244,7 @@ public class Login extends Panel {
 
 
     public void authenticate(String user, String password) throws AuthenticationException, AuthException {
-        AuthClient authenticator = new AuthClient("https://hopeful-kare.78-198-63-78.plesk.page");
+        AuthClient authenticator = new AuthClient("url/api");
 
 
         try {

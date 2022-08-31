@@ -23,17 +23,17 @@ public class Launcher extends Application {
     private PanelManager panelManager;
     private static Launcher instance;
     private final ILogger logger;
-    public final Path launcherDir = GameDirGenerator.createGameDir("Tiranium", true);
+    public final Path launcherDir = GameDirGenerator.createGameDir("LauncherJava", true);
     private final Saver saver;
     private AuthInfos authInfos = null;
 
 
     public Launcher() {
         instance = this;
-        this.logger = new Logger("[Tiranium Launcher]", Paths.get(this.launcherDir.toString(), "launcher.log"));
+        this.logger = new Logger("[LauncherJava Launcher]", Paths.get(this.launcherDir.toString(), "launcher.log"));
         if (!this.launcherDir.toFile().exists()) {
             if (!this.launcherDir.toFile().mkdir()) {
-                this.logger.err("Impossible de créer le dossier .Tiranium");
+                this.logger.err("Impossible de créer le dossier .LauncherJava");
             }
         }
 
@@ -64,7 +64,7 @@ public class Launcher extends Application {
 
         if (saver.get("accessToken") != null ) {
 
-            AuthClient authenticator = new AuthClient("https://hopeful-kare.78-198-63-78.plesk.page");
+            AuthClient authenticator = new AuthClient("URl");
 
 
 

@@ -47,7 +47,7 @@ public class TopBar extends Panel {
         this.layout.getChildren().add(imageView);
 
         //topBar Center
-        Label title = new Label("Tiranium launcher");
+        Label title = new Label("LauncherJava launcher");
         title.setFont(Font.font("Consolas", FontWeight.BOLD, FontPosture.ITALIC, 18f));
         title.setStyle("-fx-text-fill: white;");
         setCenterH(title);
