@@ -1,0 +1,11 @@
+.infos-layout {
+    -fx-background-color: rgb(215, 220, 220);
+}
+
+.infos-title {
+    -fx-text-fill: rgb(20, 25, 25);
+}
+
+.content-pane,  {
+    -fx-background-color: transparent;
+}

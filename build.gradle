@@ -1,0 +1,47 @@
+plugins {
+    id 'idea'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+    id 'java-library'
+    id 'application'
+}
+
+group 'com.github.bricklou'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven {
+        url = 'https://jitpack.io/'
+        name = 'JitPack'
+    }
+    maven {
+        url 'https://litarvan.github.io/maven'
+    }
+}
+repositories {
+    mavenCentral()
+    maven {
+        url "https://alwyn974.github.io/maven/"
+    }
+}
+
+dependencies {
+    implementation 'fr.litarvan:openauth:1+'
+    implementation 'de.jensd:fontawesomefx:8.9'
+
+    implementation 'fr.flowarg:flowupdater:1.7.1'
+    implementation 'fr.flowarg:openlauncherlib:3.2.5'
+
+    implementation 'com.github.goxr3plus:FX-BorderlessScene:4+'
+    implementation 'com.github.oshi:oshi-core:6.2.2'
+    implementation 'com.azuriom:azauth:1.0.0'
+    implementation 're.alwyn974.minecraftserverping:MinecraftServerPing:2.0.0'
+}
+
+application {
+    getMainClass().set('com.github.bricklou.launchertuto.Main')
+}
+
+compileJava {
+    options.encoding = "UTF-8"
+}
